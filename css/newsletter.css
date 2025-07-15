@@ -1,0 +1,184 @@
+.main-image img,
+.products img,
+header img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.products p,
+.specs div h4 {
+  color: #055aa2;
+  text-align: center;
+  font-weight: 700;
+}
+.sns,
+.specs {
+  display: flex;
+  gap: 10px;
+}
+.date,
+.product,
+.products p,
+.specs div h4,
+.title,
+footer,
+header {
+  text-align: center;
+}
+.blue-txt,
+.products p,
+.specs div h4,
+.title {
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  padding: 30px 0;
+}
+header img {
+  max-width: 180px;
+}
+.date {
+  color: #555;
+  font-size: 14px;
+  margin: 30px 0 60px;
+}
+.products,
+.two-col {
+  margin-bottom: 20px;
+}
+.main-image img {
+  height: auto;
+}
+.divider,
+.product-specs hr {
+  border: 0;
+  height: 1px;
+  background-color: #eaeaea;
+}
+.title {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.content {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.two-col {
+  display: flex;
+  justify-content: center;
+}
+.two-col img {
+  flex: 1;
+  width: 100%;
+  max-width: 290px;
+}
+.products p {
+  margin-top: 5px;
+}
+.product-specs {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+.product-specs hr {
+  margin: 10px 0;
+}
+.specs {
+  justify-content: space-between;
+}
+.specs .left,
+.specs .right,
+.specs div {
+  width: 50%;
+}
+.specs div h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.specs div p {
+  font-size: 14px;
+  color: #555;
+}
+.specs p {
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+.divider {
+  width: 80%;
+  margin: 30px auto;
+}
+.sns {
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.sns a img {
+  width: clamp(20px, 5vw, 30px);
+}
+footer {
+  font-size: 12px;
+  color: #555;
+  padding: 20px 40px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .two-col {
+    align-items: center;
+    flex-direction: column;
+  }
+  .products {
+    grid-template-columns: 1fr;
+  }
+  .specs {
+    flex-direction: column;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .specs .left,
+  .specs .right,
+  .specs > div {
+    width: 100%;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+.blue-txt {
+  color: #144fcf;
+}

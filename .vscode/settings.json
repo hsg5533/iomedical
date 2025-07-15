@@ -1,0 +1,7 @@
+{
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.port": 5501,
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  }
+}
