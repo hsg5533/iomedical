@@ -575,8 +575,8 @@ a.btn-form:hover {
     padding: 8px;
   }
   .sul_menu {
-    padding-right: 10px;
-    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
   .sul_menu a,
   .sul_menu a font {
